@@ -414,6 +414,8 @@ void AppHelpers::createResponseFuncs(const std::string & analysisType) {
          // specifying an event class cut. If so, look in the cmap
          // file or the srcmaps file.
          delete my_cuts;
+	 stdout << "Warning! Could not find EVENT_CLASS keyword in file " << evfile << std::endl;
+	 stdout << "Checking for counts/source map..." << std::endl;
          try {
             std::string my_file = pars["cmap"];
             evfile = my_file;
