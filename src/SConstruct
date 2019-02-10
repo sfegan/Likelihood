@@ -46,7 +46,7 @@ cflags = ' -DHAVE_OPT_PP -rdynamic -pg'
 linkflags = '-pg'
 #linkflags = ' '
 rootlibs = ['Cint', 'Tree', 'Matrix', 'Physics', 
-            'Hist', 'Graf', 'Graf3d', 'Gpad', 'Rint', 'Postscript', 'Gui']
+            'Hist', 'Graf', 'Graf3d', 'Gpad', 'Rint', 'Postscript', 'Gui', 'Minuit2']
 Export(['package', 'home', 'apps', 'libraries', 'cflags',
         'linkflags', 'rootlibs'])
 SConscript('buildBase')
